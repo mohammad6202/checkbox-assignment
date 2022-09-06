@@ -89,18 +89,20 @@ class _HomeState extends State<Home> {
                 });
               }),
             ),
-            if (flutterCourse == true)
-              Image(
-                  height: 200,
-                  width: 350,
-                  image: NetworkImage(
-                      "https://th.bing.com/th/id/R.a0019d9e77bdaa5d132311a27ca542b7?rik=Gy7jg4fB5kHjWg&pid=ImgRaw&r=0")),
-            if (reactCourse == true)
-              Image(
-                  height: 200,
-                  width: 350,
-                  image: NetworkImage(
-                      "https://th.bing.com/th/id/R.57b508214d06e292b5e6fb5df2f4a089?rik=Mw2ep%2bDIQY%2fyxQ&pid=ImgRaw&r=0"))
+            Column(children: [
+              if (flutterCourse == true)
+                Image(
+                    height: 200,
+                    width: 350,
+                    image: NetworkImage(
+                        "https://th.bing.com/th/id/R.a0019d9e77bdaa5d132311a27ca542b7?rik=Gy7jg4fB5kHjWg&pid=ImgRaw&r=0")),
+              if (reactCourse == true)
+                Image(
+                    height: 200,
+                    width: 350,
+                    image: NetworkImage(
+                        "https://th.bing.com/th/id/R.57b508214d06e292b5e6fb5df2f4a089?rik=Mw2ep%2bDIQY%2fyxQ&pid=ImgRaw&r=0"))
+            ])
           ],
         )),
       ),
